@@ -17,6 +17,7 @@ h1 {
     font-style: italic;
     font-size: 40px;
     color: #2E2A24;
+    margin-bottom: 30px;
 }
 
 .container-box {
@@ -38,20 +39,26 @@ h1 {
 }
 
 form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
 form div {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 form input {
-  padding: 5px;
-  width: 100%;
-  box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    background-color: #FFF;
+    border: 1px solid #C2B091;
+    border-radius: 2px;
 }
 
 form button,
@@ -60,20 +67,24 @@ form p {
 }
 
 form button {
-  grid-column: span 2;
-  margin-top: 10px;
-  margin-bottom: 0;
+    width: 149px;
+    color: #FBFAF6;
+    background-color: #55613D;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    justify-self: center;
 }
 
 form p {
-  grid-column: span 2;
-  margin-top: -20px; /* aproxima do botão */
-  text-align: center;
+
+    margin-top: -20px;
+    text-align: center;
 }
 
 .image-box {
     width: 50%;
-    background: url('./images/tree\ image.jpg') no-repeat center center;
+    background: url('./images/treeimage.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -88,4 +99,15 @@ form p {
     color: #fff;
     background-color: #473C34;
     padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.image-box a {
+    font-weight: normal;
+    color: #fff;
+    text-decoration: underline;
 }
