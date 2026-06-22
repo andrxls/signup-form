@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap');
 
 * {
     margin: 0px;
@@ -6,6 +6,7 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 12px;
     color: #6F665B;
+    letter-spacing: 5%;
 }
 
 body {
@@ -13,11 +14,19 @@ body {
 }
 
 h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+
+h2 {
     font-family: 'DM Serif Display', serif;
     font-style: italic;
-    font-size: 40px;
+    font-size: 35px;
     color: #2E2A24;
     margin-bottom: 30px;
+    letter-spacing: 0;
 }
 
 .container-box {
@@ -42,6 +51,13 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+}
+
+#logo {
+    width: 160px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 form div {
@@ -74,6 +90,13 @@ form button {
     border: none;
     border-radius: 5px;
     justify-self: center;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #424B2F;
+    transition: background-color 0.3s ease;
 }
 
 form p {
@@ -84,7 +107,7 @@ form p {
 
 .image-box {
     width: 50%;
-    background: url('./images/treeimage.jpg') no-repeat center center;
+    background: url('/images/treeimage.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -102,12 +125,10 @@ form p {
 }
 
 a {
-    text-decoration: none;
     font-weight: bold;
 }
 
 .image-box a {
     font-weight: normal;
     color: #fff;
-    text-decoration: underline;
 }
