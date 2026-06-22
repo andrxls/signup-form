@@ -25,14 +25,67 @@ h1 {
     display: flex;
     box-sizing: border-box;
     margin: 0 auto;
+    box-shadow: 0 12px 40px 0 #2B262114;
 }
 
 .form-box {
     width: 50%;
     background-color: #FBFAF6;
+    padding: 0 44px 0 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button,
+form p {
+    grid-column: span 2;
+}
+
+form button {
+  grid-column: span 2;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+form p {
+  grid-column: span 2;
+  margin-top: -20px; /* aproxima do botão */
+  text-align: center;
 }
 
 .image-box {
     width: 50%;
-    background-color: whitesmoke;
+    background: url('./images/tree\ image.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.image-box p {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color: #473C34;
+    padding: 5px;
 }
