@@ -67,6 +67,7 @@ O projeto cobre tudo o que foi pedido pelo curso, mas ainda não está 100% fina
 
 - [ ] Toggle de tema claro/escuro (light/dark mode)
 - [ ] Validação de senha e confirmação de senha via JavaScript
+- [ ] Design responsivo
 
 ---
 
