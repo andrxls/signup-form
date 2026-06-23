@@ -6,7 +6,7 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 12px;
     color: #6F665B;
-    letter-spacing: 5%;
+    letter-spacing: 0.1em;
 }
 
 body {
@@ -23,7 +23,7 @@ h1 {
 h2 {
     font-family: 'DM Serif Display', serif;
     font-style: italic;
-    font-size: 35px;
+    font-size: 28px;
     color: #2E2A24;
     margin-bottom: 30px;
     letter-spacing: 0;
@@ -36,11 +36,11 @@ h2 {
     box-sizing: border-box;
     margin: 0 auto;
     box-shadow: 0 12px 40px 0 #2B262114;
+    background-color: #FBFAF6;
 }
 
 .form-box {
     width: 50%;
-    background-color: #FBFAF6;
     padding: 0 44px 0 44px;
     display: flex;
     flex-direction: column;
@@ -69,12 +69,18 @@ form input {
     padding: 5px;
     width: 100%;
     box-sizing: border-box;
-}
-
-form input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
     background-color: #FFF;
     border: 1px solid #C2B091;
     border-radius: 2px;
+}
+
+form input:user-invalid {
+    background-color: #e6ddcd;
+}
+
+form input:focus {
+    border: 1px solid #352A26;
+    outline: none;
 }
 
 form button,
@@ -100,14 +106,14 @@ form button:hover {
 }
 
 form p {
-
     margin-top: -20px;
     text-align: center;
 }
 
 .image-box {
+    padding: 0 44px 0 44px;
     width: 50%;
-    background: url('/images/treeimage.jpg') no-repeat center center;
+    background: url('./images/treeimage.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 }
